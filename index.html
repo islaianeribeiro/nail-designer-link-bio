@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rousiane Torres | Nail Designer</title>
+
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./src/css/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <!-- Perfil -->
+      <section class="profile">
+        <img
+          src="./src/images/profile.jpg"
+          alt="Foto da Nail Designer Rousiane Torres"
+        />
+        <h1>Rousiane Torres</h1>
+        <p class="subtitle">Nail Designer</p>
+        <p class="services">Manicure • Pedicure • Fibra • Gel • Esmaltação</p>
+      </section>
+
+      <!-- Botões -->
+      <section class="links">
+        <a
+          class="btn btn-primary"
+          href="https://wa.me/551132364454?text=Olá! Vim pelo seu link do Instagram e gostaria de agendar um horário 💅"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Agendar pelo WhatsApp (abre em nova aba)"
+        >
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+          <span>Agendar pelo WhatsApp</span>
+        </a>
+
+        <a class="btn btn-secondary" href="#" onclick="openModal()">
+          <i class="fa-solid fa-tags" aria-hidden="true"></i>
+          Ver Tabela de Preços
+        </a>
+      </section>
+
+      <!-- Tabela de preços -->
+      <section class="modal-overlay" id="modal">
+        <div class="modal">
+          <button
+            class="close"
+            onclick="closeModal()"
+            aria-label="Fechar tabela de preços"
+          >
+            <i class="fa-solid fa-x" aria-hidden="true"></i>
+          </button>
+
+          <div class="logo">
+            <img src="./src/images/logo.png" alt="" aria-hidden="true" />
+          </div>
+
+          <h2>Tabela de Preços</h2>
+
+          <div class="category">
+            <h3>Manicure</h3>
+
+            <ul>
+              <li><span>Esmaltação em Gel</span><span>R$ 60,00</span></li>
+              <li><span>Banho em Gel</span><span>R$ 100,00</span></li>
+            </ul>
+          </div>
+
+          <div class="category">
+            <h3>Pedicure</h3>
+
+            <ul>
+              <li><span>Pedicure Simples</span><span>R$ 50,00</span></li>
+              <li><span>Esmaltação em Gel</span><span>R$ 50,00</span></li>
+              <li><span>Banho em Gel/Blindagem</span><span>R$ 85,00</span></li>
+            </ul>
+          </div>
+
+          <div class="category">
+            <h3>Alongamentos</h3>
+
+            <ul>
+              <li><span>Molde F1</span><span>R$ 130,00</span></li>
+              <li><span>Fibra de Vidro</span><span>R$ 150,00</span></li>
+            </ul>
+          </div>
+
+          <div class="infos">
+            <p>
+              <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+              Pix &nbsp;|&nbsp;
+              <i class="fa-solid fa-money-bill-wave" aria-hidden="true"></i>
+              Dinheiro
+            </p>
+
+            <a
+              class="btn-number"
+              href="https://wa.me/551132364454"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp (abre em nova aba)"
+            >
+              <span>(11) 93236-4454</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="social-media">
+          <a
+            href="https://wa.me/551132364454"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="WhatsApp (abre em nova aba)"
+            >WhatsApp</a
+          >
+          <a
+            href="https://www.instagram.com/rousiane.nails?igsh=dXE2aTU3Y3Nidjhk"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram (abre em nova aba)"
+            >Instagram</a
+          >
+        </div>
+        <p>Desenvolvido por Islaiane Ribeiro</p>
+      </footer>
+    </main>
+
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>
