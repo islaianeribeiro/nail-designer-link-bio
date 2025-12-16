@@ -145,14 +145,21 @@ body {
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.4);
-  display: none;
+
+  display: flex;
   align-items: center;
   justify-content: center;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+
   z-index: 1000;
 }
 
 .modal-overlay.active {
-  display: flex;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .modal {
@@ -167,6 +174,15 @@ body {
 
   overflow-y: auto;
   position: relative;
+
+  transform: translateY(20px) scale(0.95);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.modal-overlay.active .modal {
+  transform: translateY(0) scale(1);
+  opacity: 1;
 }
 
 .logo {
@@ -210,7 +226,7 @@ body {
   right: 14px;
   background: none;
   border: none;
-  font-size: 18px;
+  font-size: 16px;
   cursor: pointer;
 }
 
@@ -226,7 +242,7 @@ footer {
 }
 
 .infos {
-  color: #000;
+  color: #333;
 }
 
 .infos p,
@@ -235,7 +251,7 @@ footer p {
 }
 
 .infos a {
-  color: #000;
+  color: #333;
   cursor: pointer;
 }
 
